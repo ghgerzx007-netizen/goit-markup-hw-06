@@ -521,12 +521,12 @@ footer p {
     color: #F4F4FD;
     max-width: 264px;
     margin-top: 16px;
+    text-align: start;
 }
 
 footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 96px 16px;
 }
 
 .logo-footer {
@@ -593,13 +593,18 @@ display: flex;
 
 footer .container
 {
+    
     display: flex;
-align-items: baseline;
-justify-content: flex-start;
-flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+gap: 72px;
 }
 .icons-footer-wrapper {
-    margin-left: 120px;
+    
+    margin-left: 0;
+    
 }
 .social-icons-footer {
   display: flex;
@@ -608,15 +613,18 @@ flex-direction: row;
   padding: 0;
   margin: 0;
 }
+
 .footer-form
 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 .subcribe
 {
-    margin-left: auto;
+    
+    margin-left: 0;
 }
 .subcribe-footer
 {
@@ -692,8 +700,8 @@ background-color: #31d0aa;
         letter-spacing: 0.02em;
         color: #fff;
     margin-bottom: 16px;
-text-align: start;
-justify-content: start;
+text-align: center;
+justify-content: center;
 }
 .social
 {
@@ -703,6 +711,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
+text-align: center;
 }
 .ellipse
 {
@@ -945,7 +954,7 @@ background-color:#404bbf;
 }
  
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
   .container {
     max-width: 768px;
     padding-left: 16px;
@@ -959,7 +968,9 @@ background-color:#404bbf;
   header nav {
     width: auto;
   }
-
+.logo{
+    padding-right: 120px;
+}
   .nav-list { display:flex; 
     gap: 40px;
   }
@@ -1015,6 +1026,36 @@ background-color:#404bbf;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
+  
+  footer .container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: baseline;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 108px;
+  }
+
+  .subcribe {
+        align-items: left;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        
+    }
+    .title-footer {
+        text-align: start;
+        justify-content: start;
+    }
+    .social {
+        text-align: start;
+        justify-content: start;
+    }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 2) {
@@ -1023,6 +1064,7 @@ background-color:#404bbf;
         rgba(46, 47, 66, 0.7)),
       url("../images/Hero-img-Tab-2x.jpg");
   }
+  
 }
 
 @media screen and (min-width: 1158px) {
@@ -1037,7 +1079,10 @@ background-color:#404bbf;
     gap: 40px;
     align-items: center;
   }
-
+  .logo 
+  {
+    padding-right: 76px;  
+  }
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1104,6 +1149,40 @@ background-color:#404bbf;
 
   .cards {
     width: calc((100% - 72px) / 4);
+  }
+  footer
+  {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  footer .container
+  {
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .footer-form
+  {
+    flex-direction: row;
+    align-items: center;
+  }
+  .icons-footer-wrapper
+  {
+    margin-left: 120px;
+  }
+  .subcribe
+  {
+    margin-left: auto;
+  }
+  .title-footer
+  {
+    text-align: start;
+    justify-content: start;
+  }
+  .social{
+    text-align: start;
+    justify-content: start;
   }
 }
 
