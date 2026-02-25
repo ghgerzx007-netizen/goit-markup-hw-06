@@ -235,8 +235,7 @@ header address {
 
 
 .mob-menu  { 
-    background-color: #fff;
-    padding: 24px 24px 40px 16px;
+        background-color: #fff;
      position: fixed;
      top: 0;
      left: 0;
@@ -257,8 +256,8 @@ header address {
         pointer-events: auto;
 }
 .mobile-menu-button-close {
-    width: 24px;
-    height: 24px;
+    width: 8px;
+    height: 8px;
     position: absolute;
     justify-content: center;
     top: 24px;
@@ -733,7 +732,7 @@ text-align: center;
     visibility: hidden;
     pointer-events: none;
 }
-.is-open
+.overlay .is-open
 {
     position: fixed;
         top: 0;
@@ -1022,6 +1021,10 @@ background-color:#404bbf;
   .portfolio ul {
     gap: 72px 24px;
   }
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 
   .portfolio li {
     width: calc((100% - 24px) / 2);
@@ -1143,8 +1146,8 @@ text-align: start;
   
 
   .portfolio {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .portfolio ul {
