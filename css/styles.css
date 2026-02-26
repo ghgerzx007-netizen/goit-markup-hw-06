@@ -13,7 +13,10 @@ h1 {
     margin:  0 auto;
     padding: 0 16px;
 }
-
+footer 
+{
+    background-color:#2E2F42;
+}
 ul, ol {
     margin: 0;
     padding-left: 0;
@@ -182,10 +185,8 @@ header {
 }
 header nav{
     display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 16px 0;
-  
+   align-items: center;
+   width: 100%;
 }
 
 .nav-list {
@@ -230,9 +231,7 @@ header address {
 }
 .mob-menu-container {
 padding: 24px 24px 40px 16px;
-width: 320px;
-height: 56px;
-padding: 16px;
+width: 100%;
 }
 
 .mob-menu  { 
@@ -615,15 +614,13 @@ footer .container
     
     display: flex;
 align-items: center;
-justify-content: center;
+justify-content: start;
 text-align: center;
 flex-direction: column;
 gap: 72px;
-}
-.icons-footer-wrapper {
-    
-    margin-left: 0;
-    
+} 
+.icons-footer-wrapper { 
+     margin-left: 0;
 }
 .social-icons-footer {
   display: flex;
@@ -998,6 +995,7 @@ background-color:#404bbf;
   }
 .info {
     display: block;
+    font-size: 12px;
 }
   header .info {
     padding: 0;
@@ -1026,7 +1024,7 @@ background-color:#404bbf;
   }
 
   .team-list {
-    gap: 24px;
+    gap: 64px 24px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1050,24 +1048,21 @@ background-color:#404bbf;
   }
   
   footer .container {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    gap: 24px;
-    align-items: baseline;
-    justify-content: center;
-    text-align: start;
-    padding: 0 16px;
+     display: flex;
+     flex-direction: row; 
+     flex-wrap: wrap;
+     gap: 24px;
+     align-items: baseline;
+     text-align: start;
+} 
+.logo-first,.logo-footer
+{
+    align-items: start;
 }
-
-  .subcribe {
-        align-items: left;
-        justify-content: flex-start;
-    }
 
     .footer-form {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         gap: 24px;
         
     }
@@ -1093,7 +1088,13 @@ background-color:#404bbf;
         rgba(46, 47, 66, 0.7)),
       url("../images/Hero-img-Tab-2x.jpg");
   }
-  
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  footer .container {
+    max-width: 584px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media screen and (min-width: 1158px){
@@ -1190,18 +1191,16 @@ text-align: start;
 
   .cards {
     width: calc((100% - 72px) / 4);
+    gap: 100px;
   }
-  footer
-  {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+ 
   
   footer .container
   {
     align-items: baseline;
     justify-content: flex-start;
     flex-direction: row;
+     text-align: start;
   }
   .footer-form
   {
