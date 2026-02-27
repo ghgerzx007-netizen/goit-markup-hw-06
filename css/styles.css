@@ -185,7 +185,7 @@ header {
     cursor: pointer;
      margin-left: auto;
 }
-header nav{
+.nav-header {
     display: flex;
    align-items: center;
    width: 100%;
@@ -410,8 +410,14 @@ color: #434455;
     width: 264px;
 }
 .features-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
     margin-bottom: 8px;
-    text-align: center;
+    
 }
 .visually-hidden {
     position: absolute;
@@ -544,12 +550,12 @@ z-index: 1;
     margin-bottom: 8px;
 }
 
-footer p {
+.footer-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: #fdf4f5;
     max-width: 264px;
     margin-top: 16px;
     text-align: start;
@@ -1036,7 +1042,7 @@ h1 {
   }
 .cards 
 {
-    width: calc(100%-24px)/2;
+    width: calc((100% - 24px) / 2);
 }
   .features-item {
     width: calc((100% - 24px) / 2);
@@ -1151,11 +1157,11 @@ h1
   .features-title
   {
     font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
-text-align: start;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+     text-align: start;
   }
 
   .icon-wrapper {
