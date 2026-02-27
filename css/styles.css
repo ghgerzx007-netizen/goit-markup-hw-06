@@ -253,12 +253,24 @@ display: flex;
         visibility: hidden;
         pointer-events: none;    
 }
-.info-mob {
+.info-mob-container {
   margin-top: auto;
 }
 .info-address-mob
 {
     padding-bottom: 48px;
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+}
+.info-mob-tel
+{
+color: #4d5ae5;
+}
+.info-mob-email
+{
+    color: #434455;
 }
 .mob-menu.is-open{
     opacity: 1;
@@ -393,7 +405,7 @@ color: #434455;
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 0;
     
 }
 .features-item {
@@ -535,9 +547,7 @@ z-index: 1;
 .item-text
 {
      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.item-text:hover
-{
+     width: 264px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
      0 1px 1px 0 rgba(46, 47, 66, 0.16),
      0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -1065,6 +1075,12 @@ h1 {
   .item-text {
     width: calc((100% - 24px) / 2);
   }
+  .item-text:hover
+  {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08); 
+     }
 
   .modal {
     width: 408px;
@@ -1189,7 +1205,13 @@ h1
     margin: 0 auto 48px;
   }
   
-  
+  .info{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+  }
 
   .portfolio {
     padding-top: 120px;
