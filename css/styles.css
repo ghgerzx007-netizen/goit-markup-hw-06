@@ -967,9 +967,10 @@ font-weight: 400;
 {
     fill: #FFFFFF;
     opacity: 0;
-    flex-shrink: 0;
 }
-
+.span-checkbox {
+    flex-shrink: 0;
+} 
 .modal-check:checked+.modal-check-label .span-checkbox {
     background-color: #404bbf;
     border-color: #404bbf;
@@ -1011,7 +1012,6 @@ font-weight: 400;
 background-color:#404bbf;
 }
  
-
 @media screen and (min-width: 768px){
   .container {
     max-width: 768px;
@@ -1072,8 +1072,12 @@ h1 {
 
   .features-list {
     gap: 72px 24px;
-    
-  }
+}
+    .features-title
+    {                    
+        text-align: start;
+    }
+  
  .team .container
   {
     width: 584px;
@@ -1129,8 +1133,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 {
     align-items: start;
 }
-
-    .footer-form {
+     .footer-form {
         flex-direction: row;
         align-items: flex-start;
         gap: 24px;
@@ -1150,8 +1153,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     .subcribe-footer {
         width: 264px;
     }
-}
 
+}
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -1208,6 +1211,9 @@ h1
         letter-spacing: 0.02em;
         color: #2e2f42;
         text-align: start;
+  }
+  .about{
+    font-weight: 400;
   }
 
   .icon-wrapper {
