@@ -80,7 +80,7 @@ a {
             .hero{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
-      url("../images/Hero-img-s-X2.jpg");
+      url("../images/Hero-img-S-X2.jpg");
             }
          }
         
@@ -236,7 +236,7 @@ width: 100%;
 display: flex;
   flex-direction: column;
   height: 100%;
-
+position: relative;
 }
 .mob-menu  { 
         background-color: #fff;
@@ -923,7 +923,7 @@ position: absolute;
 {
  border-color: #4d5ae5;
 }
-.modal-check:checked + .modal-check-label span
+.modal-check:checked + .modal-check-label .span-checkbox
 {
     background-color: #404bbf;
         border: none;
